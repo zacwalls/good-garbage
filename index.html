@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Good Garbage PDX</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="Providing the Portland Metro area with fast and affordable junk removal, emphasizing recycling and donation of reusable goods">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="shortcut icon" href="images/gglogo.png" type="image/png">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+
+	<!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script>window.html5 || document.write('<script src="/static/js/vendor/html5shiv.js"><\/script>')</script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+	<div class="navbar">
+		<div class="menu-container">
+			<div id="menu">
+				<div id="icon">
+					<span class="line top"></span>
+					<span class="line middle"></span>
+					<span class="line bottom"></span>
+				</div>
+			</div>
+		</div>
+		<div class="logo-container">
+			<img id="logo" src="images/gglogo.png">
+		</div>
+		<ul class="dropdown-content close">
+			<li><a href="#landing">HOME</a></li>
+			<li><a href="#servarea">SERVICE AREA</a></li>
+			<li><a href="#service">SERVICES</a></li>
+			<li><a href="#contact">CONTACT</a></li>
+		</ul>
+	</div>
+
+	<div class="alert fail contact">
+		<span class="close-btn">&times;</span>
+		Please fill out all forms and use a valid email!
+	</div>
+
+	<div class="alert success">
+		<span class="close-btn">&times;</span>
+		Message sent! We will get back to you soon!
+	</div>
+
+	<div class="alert fail zip">
+		<span class="close-btn">&times;</span>
+		Please enter a zipcode
+	</div>
+
+	<div class="sec darken-pseudo" id="landing">
+		<div class="content">
+			<div class="mis-statement">
+				<h2>Providing our beautiful city with fast and affordable junk removal, emphasizing recycling and donation of reusable goods</h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="sec servarea" id="servarea">
+		<div class="header">
+			<p><span>WHERE WE SERVE</span></p>
+			<h1>OUR SERVICE AREA</h1>
+		</div>
+		<div class="content">
+			<p>Before you contact us, you might want to check if we service your area</p>
+			<form>
+				<input id="zip" type="text" name="zip" placeholder="Enter Zipcode">
+				<button id="check">Check</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="sec who darken-pseudo">
+		<div class="content">
+			<div class="mis-statement">
+				<h2>WE ARE COMITTED TO MAKING PORTLAND A CLEAN, SUSTAINABLE, AND BEAUTIFUL PLACE FOR EVERYONE</h2>
+			</div>
+
+			<div id="undertext">
+				<p>Good Garbage was founded in December of 2011 to employ the out of work athletes and gym members of Alive MMA and CrossFit Woodstock. We believe that by taking care of our gym members and providing honest handwork for the community is not only the best business model, it is the only business model. We encourage you to come and visit our gym and drop in for one of the many different classes we have.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="sec reviews">
+		<div class="header2">
+			<h2>SEE WHAT OUR CUSTOMERS SAY</h2>
+		</div>
+		<div class="slideshow-container">
+			<div class="slide">
+				<p>“<i>Very happy with these guys! They had great follow through, they arrived when they said they would for both the initial bid and the hauling it all away.  Very hard workers, just two guys hauling a lot of furniture down a flight of stairs without a single complaint. Nice guys.</i>”</p>
+				<p class="author">- Signe O.</p>
+			</div>
+			<div class="slide">
+				<p>“<i>These guys were fantastic.  They were able to fit me in same day, were very friendly, great communication, came on time, and hauled out our old bed (frame, boxspring, mattress) at a really great price.  
+
+				Getting rid of big stuff is a hassle and these guys make it hassle free!</i>”</p>
+				<p class="author">- Laura M.</p>
+			</div>
+			<div class="slide">
+				<p><i>“More stars for Good Garbage. Price was right (no extras added at payout). The boys did a quick, careful removal of an old bed down winding stairs. Polite, friendly. We have more junk to be hauled by and by.”</i></p>
+				<p class="author">- Willo O.</p>
+			</div>
+		</div>
+		<div class="dot-container">
+			<span class="dot active" id="1"></span>
+			<span class="dot" id="2"></span>
+			<span class="dot" id="3"></span>
+		</div>
+	</div>
+
+	<div class="sec" id="service">
+		<div class="header">
+			<p><span>WHAT WE DO</span></p>
+			<h1>OUR SERVICES</h1>
+		</div>
+		<div class="content">
+			<p id="desc-service">
+				We can haul away almost anything! Items such as miscelanieous household objects, furniture, construction and yard debris, and much, much more! The list of items we cannot take is much shorter. Items such as: 
+			</p>
+			<div class="items">
+				<div class="item" id="paint">
+					<img class="icon" alt="paint" src="images/paint.svg">
+					<p>Primer, first coat, flat paint, eggshell, gloss, and spraypaint</p>
+				</div>
+				<div class="item" alt="battery" id="battery">
+					<img class="icon" src="images/battery.svg">
+					<p>AA, AAA, D, and so on (car batteries are ok!)</p>
+				</div>
+				<div class="item" alt="lightbulb" id="lightbulb">
+					<img class="icon" src="images/lightbulb.svg">
+					<p>T12, T8,  T5 tube lights as well as blacklights (LEDs and other lighting systems accepted)</p>
+				</div>
+				<div class="item" alt="chemicals" id="chem">
+					<img class="icon" src="images/chem.svg">
+					<p>Hand sanatizer, soaps, bleach, bathroom cleaners and other household chemicals</p>
+				</div>
+			</div>
+			<p>Some items may require testing before we can take them such as old wooden window glassing, vynil and linoleum, laugh and plaster, popcorn texture on drywall, and roof tar paper</p>
+		</div>
+	</div>
+
+	<div class="sec" id="contact">
+		<div class="header2">
+			<h2>Contact Us</h2>
+		</div>
+		<div class="content">
+			<form>
+				<input id="fname" type="text" name="first name" placeholder="First name">
+				<input id="lname" type="text" name="last name" placeholder="Last name">
+				<input id="email" type="email" name="email" placeholder="Email">
+				<textarea id="message" cols="150" name="message" placeholder="Message"></textarea>
+				<input id="company" type="text" name="company" style="display: none">
+				<button id="send" type="submit">Send</button>
+			</form>
+			<p>If you have a comment, question, or concern, shoot us an email, call or text and we will get back to you as soon as we can!</p>
+		</div>
+	</div>
+
+	<div class="sec" id="location">
+		<div id="map" style="width: 100%"><iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=100%25&amp;hl=en&amp;q=5607%20SE%20Woodstock%20Blvd,%20Portland,%20OR%2097206+(Good%20Garbage)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+	</div>
+
+	<footer>
+		<div class="footer-container">
+			<div class="info">
+				<p id="footer-name">Good Garbage PDX</p>
+				<p id="footer-address">5607 SE Woodstock Blvd, Portland, OR 97206</p>
+				<p id="footer-number">(503) 333-7590</p>
+			</div>
+
+			<div class="social-footer">
+				<a href="https://www.facebook.com/goodgarbagepdx"><img id="fb" alt="FaceBook" src="images/fb.png"></a>
+				<a href="https://twitter.com/goodgarbagepdx"><img id="tw" alt="Twitter" src="images/tw.png"></a>
+				<a href="https://www.youtube.com/watch?v=RaQleg79pPw"><img id="yt" alt="YouTube" href="" src="images/yt.png"></a>
+			</div>
+
+			<div class="bottom-footer">
+				<p><a href="privacy">Privacy Policy</a> &middot; &copy; Good Garbage, LLC</p>
+			</div>
+		</div>
+	</footer>
+</div>
+</body>
+</html>
